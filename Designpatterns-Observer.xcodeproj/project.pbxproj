@@ -12,6 +12,11 @@
 		EE2CFEBB20A1DFA100ADFC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2CFEBA20A1DFA100ADFC29 /* Assets.xcassets */; };
 		EE2CFEBE20A1DFA100ADFC29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2CFEBC20A1DFA100ADFC29 /* Main.storyboard */; };
 		EE2CFEC120A1DFA100ADFC29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFEC020A1DFA100ADFC29 /* main.m */; };
+		EE2CFECA20A1DFB100ADFC29 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFEC920A1DFB100ADFC29 /* Observer.m */; };
+		EE2CFECD20A1DFC800ADFC29 /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFECC20A1DFC800ADFC29 /* Subject.m */; };
+		EE2CFED020A1DFE300ADFC29 /* ClockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFECF20A1DFE300ADFC29 /* ClockTimer.m */; };
+		EE2CFED320A1DFFD00ADFC29 /* DigitalClock.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFED220A1DFFD00ADFC29 /* DigitalClock.m */; };
+		EE2CFED620A1E00D00ADFC29 /* AnalogClock.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFED520A1E00D00ADFC29 /* AnalogClock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,16 @@
 		EE2CFEBF20A1DFA100ADFC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE2CFEC020A1DFA100ADFC29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE2CFEC220A1DFA100ADFC29 /* Designpatterns_Observer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Designpatterns_Observer.entitlements; sourceTree = "<group>"; };
+		EE2CFEC820A1DFB100ADFC29 /* Observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		EE2CFEC920A1DFB100ADFC29 /* Observer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
+		EE2CFECB20A1DFC800ADFC29 /* Subject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		EE2CFECC20A1DFC800ADFC29 /* Subject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
+		EE2CFECE20A1DFE300ADFC29 /* ClockTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockTimer.h; sourceTree = "<group>"; };
+		EE2CFECF20A1DFE300ADFC29 /* ClockTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockTimer.m; sourceTree = "<group>"; };
+		EE2CFED120A1DFFD00ADFC29 /* DigitalClock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitalClock.h; sourceTree = "<group>"; };
+		EE2CFED220A1DFFD00ADFC29 /* DigitalClock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitalClock.m; sourceTree = "<group>"; };
+		EE2CFED420A1E00D00ADFC29 /* AnalogClock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalogClock.h; sourceTree = "<group>"; };
+		EE2CFED520A1E00D00ADFC29 /* AnalogClock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalogClock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +72,16 @@
 		EE2CFEB320A1DFA100ADFC29 /* Designpatterns-Observer */ = {
 			isa = PBXGroup;
 			children = (
+				EE2CFECB20A1DFC800ADFC29 /* Subject.h */,
+				EE2CFECC20A1DFC800ADFC29 /* Subject.m */,
+				EE2CFECE20A1DFE300ADFC29 /* ClockTimer.h */,
+				EE2CFECF20A1DFE300ADFC29 /* ClockTimer.m */,
+				EE2CFEC820A1DFB100ADFC29 /* Observer.h */,
+				EE2CFEC920A1DFB100ADFC29 /* Observer.m */,
+				EE2CFED120A1DFFD00ADFC29 /* DigitalClock.h */,
+				EE2CFED220A1DFFD00ADFC29 /* DigitalClock.m */,
+				EE2CFED420A1E00D00ADFC29 /* AnalogClock.h */,
+				EE2CFED520A1E00D00ADFC29 /* AnalogClock.m */,
 				EE2CFEB420A1DFA100ADFC29 /* AppDelegate.h */,
 				EE2CFEB520A1DFA100ADFC29 /* AppDelegate.m */,
 				EE2CFEB720A1DFA100ADFC29 /* ViewController.h */,
@@ -140,8 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2CFED020A1DFE300ADFC29 /* ClockTimer.m in Sources */,
 				EE2CFEB920A1DFA100ADFC29 /* ViewController.m in Sources */,
+				EE2CFECA20A1DFB100ADFC29 /* Observer.m in Sources */,
 				EE2CFEC120A1DFA100ADFC29 /* main.m in Sources */,
+				EE2CFECD20A1DFC800ADFC29 /* Subject.m in Sources */,
+				EE2CFED320A1DFFD00ADFC29 /* DigitalClock.m in Sources */,
+				EE2CFED620A1E00D00ADFC29 /* AnalogClock.m in Sources */,
 				EE2CFEB620A1DFA100ADFC29 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

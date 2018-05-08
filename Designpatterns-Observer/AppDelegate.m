@@ -7,15 +7,25 @@
 //
 
 #import "AppDelegate.h"
+#import "ClockTimer.h"
+#import "DigitalClock.h"
+#import "AnalogClock.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    ClockTimer* clockTimer = [[ClockTimer alloc] init];
+    
+    DigitalClock* digitalClk = [[DigitalClock alloc] init];
+    AnalogClock* analogClk = [[AnalogClock alloc] init];
+    [clockTimer Attach:digitalClk];
+    [clockTimer Attach:analogClk];
+    
+    [clockTimer startTimer];
 }
 
 
